@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-
       <InserirProduto AdicionarProduto={AdicionarProduto} produtos={produtos}/>
       <Produtos produtos={produtos}/>
     </div>

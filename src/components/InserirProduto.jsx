@@ -15,14 +15,22 @@ export default function ({AdicionarProduto}, {produtos}) {
 
     function handleClickButton () {
         const url1 = url + '"' + inputProduto + '"'
-
-        console.log(url1)
+        
         axios.get(url1).then(response => {
             var i
             let novosProdutos = []
+            console.log(response.data)
+            
             for(i in response.data){
-                novosProdutos = [...novosProdutos, {descricao: response.data[i].descricao}]
+                novosProdutos = [...novosProdutos, 
+                    {   descricao: response.data[i].descricao,
+                        cest: response.data[i].cest,
+                        ncm: response.data[i].ncm,
+                        cst_icms: response.data[i].cst_icms
+                    }
+                    ]
             }
+
             AdicionarProduto(novosProdutos)
         })
         
