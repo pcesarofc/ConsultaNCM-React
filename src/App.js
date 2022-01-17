@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import InserirProduto from './components/InserirProduto';
+import Produtos from './components/Produtos';
 
 function App() {
+  const [produtos, setprodutos] = React.useState([
+  ])
+
+  function AdicionarProduto (produtosEncontrados) {
+    setprodutos(produtosEncontrados)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <InserirProduto AdicionarProduto={AdicionarProduto} produtos={produtos}/>
+      <Produtos produtos={produtos}/>
     </div>
   );
 }
