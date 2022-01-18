@@ -3,9 +3,12 @@
     height: 0px;
 }
 
-
 .Card:hover .cest{
     height: auto;
     visibility: visible;
     animation-duration: 2000ms;
+}
+
+.Card:hover{
+    cursor: pointer;
 }

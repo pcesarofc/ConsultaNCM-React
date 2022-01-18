@@ -1,10 +1,18 @@
 .Button{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
     background-color: #707070;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
     width: 140px;
-    border-style: none
+    border-style: none;
+
+}
+
+.Button:hover{
+    cursor: pointer;
+    background-color: rgba(14, 13, 13, 0.267);
 }

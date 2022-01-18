@@ -7,7 +7,10 @@ export default function ({produtos}) {
 
 
     return <div className="Produto">
+        
+        
         <div className="Card">
+            
             <div className="description">{produtos.descricao}</div>
             <div className="cest">Cest : {produtos.cest}</div>
             <div className="cest">NCM: {produtos.ncm}</div>
