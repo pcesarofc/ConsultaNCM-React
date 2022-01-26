@@ -14,6 +14,8 @@ export default function ({AdicionarProduto}, {produtos}) {
 
     function handleClickButton () {
 
+    // Condicional que verifica o tamanho da entrada para consultar via ncm ou ean
+
         if(inputProduto.length == 8){
             const url1 = urlncm + '"' + inputProduto + '"'
             axios.get(url1).then(response => {

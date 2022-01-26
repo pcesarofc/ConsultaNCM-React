@@ -1,15 +1,9 @@
 .cest{
-    visibility: hidden;
     height: 0px;
+    height: auto;
 }
 
 .Card:hover .cest{
-    transition-property: hover;
-    transition-duration: 5s;
-    transition-delay: 2.0s;
-    transition-timing-function: linear;
-    height: auto;
-    visibility: visible;
 }
 
 .Card:hover{
