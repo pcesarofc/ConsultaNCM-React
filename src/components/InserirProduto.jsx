@@ -26,7 +26,8 @@ export default function ({AdicionarProduto}, {produtos}) {
                         {   descricao: response.data[i].descricao,
                             cest: response.data[i].cest,
                             ncm: response.data[i].ncm,
-                            cst_icms: response.data[i].cst_icms
+                            cst_icms: response.data[i].cst_icms,
+                            id: i
                         }
                     ]
                 }
@@ -42,7 +43,8 @@ export default function ({AdicionarProduto}, {produtos}) {
                             {   descricao: response.data[i].descricao,
                                 cest: response.data[i].cest,
                                 ncm: response.data[i].ncm,
-                                cst_icms: response.data[i].cst_icms
+                                cst_icms: response.data[i].cst_icms,
+                                id: i
                             }
                         ]
                 }

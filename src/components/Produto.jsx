@@ -1,25 +1,28 @@
 import React from "react";
 import './Produto.css'
-import './Tributos.css'
 import $ from 'jquery'
-
-
 
 export default function ({produtos}) {
 
-    function showall (){
-        return $('div#cest').show(1)
+    function esconder() {
+        $('.cest').hide(500)
     }
 
-        
+    function mostrar() {
+        $('.cest').show(500)
+    }
+
     return <div className="Produto">
-            <div className="Card" onLoad={$('div#cest').hide(1)}>
-                <div className="description" >Produto : {produtos.descricao}</div>
-                <input type="button" value="Clique" onClick={showall} />
-                <div id="cest" className="cest">Cest : {produtos.cest}</div>
-                <div id="cest" className="cest">NCM : {produtos.ncm}</div>
-                <div id="cest" className="cest">ICMS : {produtos.cst_icms}</div>
-            </div>  
+
+            <div className="Card" >
+                
+                <div className="description" onClick={mostrar}>Produto : {produtos.descricao}</div>
+                <div className="cest" onClick={esconder}>ID : {produtos.id}</div>
+                <div className="cest">Cest : {produtos.cest}</div>
+                <div className="cest">NCM : {produtos.ncm}</div>
+                <div className="cest">ICMS : {produtos.cst_icms}</div>
+
+            </div>
     </div>
 }
 

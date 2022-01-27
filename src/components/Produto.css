@@ -7,3 +7,12 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+.cest{
+    height: 0px;
+    height: auto;
+}
+
+.Card:hover{
+    cursor: pointer;
+}
